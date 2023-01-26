@@ -31,7 +31,7 @@ const Home = ({pageInfo,experiences,projects,skills,socials}:Props) => {
     <div className="bg-[rgb(0,8,56)] text-white h-screen snap-y snap-mandatory overflow-y-scroll 
     overflow-x-hidden z-0 scrollbar scrollbar-track-grey-400/20 scroll-thumb-[#f7ab0a]/80 ">
       <Head>
-        <title>Abhinav's Profile</title>
+        <title>{pageInfo?.name}- Profile</title>
       </Head>
 
       <Header socials={socials}/> 
