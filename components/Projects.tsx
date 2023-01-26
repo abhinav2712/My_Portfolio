@@ -22,7 +22,7 @@ export default function Projects({projects}: Props) {
     <div className='  relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory
     z-20 '>
       {projects?.map((project,i)=>(
-        <div className='md:w-[640px] md:h-[650px] md:mt-[1000px]'>
+        <div key={project._id} className='md:w-[640px] md:h-[650px] md:mt-[1000px]'>
         <div className='mt-[130px] md:-mt-[400px] w-[400px] h-[400px]  md:w-[650px] md:h-[650px] flex-shrink-0 snap-center flex flex-col space-y-5 items-center
         justify-center p-20 md:p-44  '>
         <motion.img
